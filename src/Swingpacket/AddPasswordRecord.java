@@ -1,5 +1,7 @@
 package Swingpacket;
+
 import java.awt.Color;
+
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,26 +10,29 @@ import java.util.Vector;
 
 import javax.swing.*; 
 
-final class AddPasswordRecord extends Ruuner {
+final class AddPasswordRecord extends FrameRunner {
 		static protected JButton addButton=new JButton("GeneratePassword");
 		Vector<JLabel> Labels = new Vector<JLabel>();
 		AddPasswordRecord()
 		{
-			//addButton.setBounds(25,25,100, 40);//x axis, y axis, width, height  
-			super.content.add(addButton);//adding button in JFrame  
+			addButton.setBounds(25,25,100, 40);//x axis, y axis, width, height  
+			super.content.add(addButton);//adding button in JFrame
+			
 			addButton.addActionListener(new ActionListener(){  
 				public void actionPerformed(ActionEvent e){  
-						JLabel tf1=new JLabel(); 
+						/**/JLabel tf1=new JLabel(); 
 						Labels.add(tf1);
 						
-				        tf1.setBounds(50,0,150,20);
+				        tf1.setBounds(50,50,150,150);
 				        content.add(tf1);
-				        System.out.println("hello");
+				        tf1.setText("aa");
 				        tf1.setFont(new java.awt.Font("Arial", Font.ITALIC, 16));
 				        tf1.setOpaque(true);
-				        tf1.setBackground(Color.WHITE);
-				        tf1.setForeground(Color.RED);
+				        tf1.setBackground(Color.RED);
+				        tf1.setForeground(Color.WHITE);
+				        
 				        SetBounder();
+				        addButton.setBounds(50,50,100, 40);
 				       
 				        }  
 				    });  
@@ -40,7 +45,8 @@ final class AddPasswordRecord extends Ruuner {
 	        int yRecordTmp = 0;
 	        while (currentLabel.hasNext()) { 
 	        	JLabel label = currentLabel.next();
-	        	label.setBounds(50,20+yRecordTmp,100, 40);
+	        	label.setBounds(50,20+yRecordTmp,100, 100);
+	        	label.setSize(100, 150);;
 	        	yRecordTmp+=20;
 	        	
 	        } 

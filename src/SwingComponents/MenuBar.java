@@ -1,5 +1,9 @@
-package Swingpacket;
-import javax.swing.*;    
+package SwingComponents;
+
+import javax.swing.*;
+
+import Swingpacket.FrameRunner;
+
 import java.awt.event.*;    
 /**
  * Class adding new menu bar
@@ -8,12 +12,12 @@ import java.awt.event.*;
  * @author Tobiasz
  *
  */
-public class MenuBar extends Ruuner implements ActionListener{ 
+public class MenuBar extends FrameRunner implements ActionListener{ 
 	public JMenuBar mb;    
 	public JMenu account;    
 	public JMenuItem changeuser,logout;
 	
-	MenuBar(){
+	public MenuBar(){
 	
 	mb=new JMenuBar();  
 	

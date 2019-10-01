@@ -19,6 +19,7 @@ public class FrameRunner extends BackEnd{
 static protected JFrame f=new JFrame();
 static protected JButton b=new JButton("click");
 static protected JPanel content = new JPanel();
+
 public static void main(String[] args) {  
 	new AddPasswordRecord();
 	new MenuBar();

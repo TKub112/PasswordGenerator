@@ -6,8 +6,9 @@ public class BackEnd {
 	
 Vector<PasswordRecord> passwordVector= new Vector<PasswordRecord>();
 
-public void addRecord(String password, String acronym)
-{
+//public void addRecord(String password, String acronym)
+//{
 	
-}
+//}
+
 }
